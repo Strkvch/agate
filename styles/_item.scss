@@ -1,0 +1,45 @@
+.item {
+    width: calc((100% - 1 * 24px) / 2);
+    &:not(:nth-child(2n)) {
+        margin-right: 24px;
+    }
+    &:not(:nth-last-child(-n+2)) {
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .item {
+        width: calc((100% - 1 * 10px) / 2);
+        &:not(:nth-child(2n)) {
+            margin-right: 10px;
+        }
+        &:not(:nth-last-child(-n+2)) {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .item {
+        width: calc((100% - 1 * 12px) / 2);
+        &:not(:nth-child(2n)) {
+            margin-right: 12px;
+        }
+        &:not(:nth-last-child(-n+2)) {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 613px) {
+    .item {
+        width: calc((100% - 1 * 10px) / 2);
+        &:not(:nth-child(2n)) {
+            margin-right: 10px;
+        }
+        &:not(:nth-last-child(-n+2)) {
+            margin-bottom: 10px;
+        }
+    }
+}

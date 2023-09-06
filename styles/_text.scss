@@ -1,0 +1,38 @@
+.text {
+    max-width: 941px;
+    margin: 0 auto;
+    font-size: $medium-font;
+    line-height: 41px;
+}
+
+@media screen and (max-width: 1024px) {
+    .text {
+        font-size: 1rem;
+        line-height: 30px;
+        max-width: 691px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        font-size: 1rem;
+        line-height: 27px;
+        max-width: 626px;
+    }
+}
+
+@media screen and (max-width: 619px) {
+    .text {
+        font-size: 0.8rem;
+        line-height: 22px;
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .text {
+        font-size: 0.7rem;
+        line-height: 20px;
+        max-width: 350px;
+    }
+}

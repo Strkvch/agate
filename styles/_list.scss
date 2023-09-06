@@ -1,0 +1,26 @@
+.list__link {
+    font-size: 1.4rem;
+    line-height: 50px;
+    color: $primary-color;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .list__link {
+        font-size: 1.14rem;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .list__link {
+        font-size: 1.1rem;
+        line-height: 31px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .list__link {
+        font-size: 0.9rem;
+    }
+}

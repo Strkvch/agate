@@ -1,0 +1,36 @@
+.bg-banner {
+    color: $primary-color;
+    padding: 218px 0 185px;
+    &__text {
+        @include text-style ($primary-color);
+        margin: 35px 0 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .bg-banner {
+        padding: 183px 0 153px;
+        &__text {
+            font-size: 0.81rem;
+            line-height: 23px;
+            margin-bottom: 63px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bg-banner {
+        padding: 171px 0 99px;
+        &__text {
+            font-size: 0.9rem;
+            margin-bottom: 66px;
+        }
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .bg-banner__text {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}

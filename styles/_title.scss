@@ -1,0 +1,23 @@
+.title {
+    @include title-style;
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 1.59rem;
+        line-height: 44px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+        line-height: 38px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .title {
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,45 @@
+.button--white {
+    @include button-style($primary-color);
+    border: 2px solid #FFF;
+}
+
+.button--white {
+    transition: all .3s;
+    &:hover {
+        background-color: #FFA60D;
+        border: 2px solid #FFA60D;
+    }
+}
+
+.button--black {
+    @include button-style(black);
+    border: 2px solid #000;
+    background-color: $primary-color;
+    margin-top: 60px;
+}
+
+.button--black {
+    transition: all .4s;
+    &:hover {
+        background-color: #FFA60D;
+        border: 2px solid #FFA60D;
+        color: $primary-color;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .button--white,
+    .button--black {
+        @include button-style-size-1024;
+    }
+    .button--black {
+        margin-top: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .button--white,
+    .button--black {
+        font-size: 0.85rem;
+    }
+}

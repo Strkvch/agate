@@ -1,0 +1,21 @@
+.scrollup {
+    border-radius: 50%;
+    background-color: #FFAC1C;
+    width: 70px;
+    height: 70px;
+    right: 20px;
+    bottom: 19px;
+    position: fixed;
+    cursor: pointer;
+    &__arrow {
+        width: 30px;
+        height: 15px;
+        position: absolute;
+        background-image: url("../icons/arrow.svg");
+        top: 25px;
+        left: 20px;
+    }
+    &:hover {
+        opacity: .7;
+    }
+}

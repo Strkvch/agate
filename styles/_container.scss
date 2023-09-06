@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding-left: 28px;
+    }
+}
+
+@media screen and (max-width: 613px) {
+    .container {
+        align-items: center;
+        padding-left: 0;
+    }
+}

@@ -1,0 +1,18 @@
+.avatar {
+    border-radius: 50%;
+    max-width: 398px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .avatar {
+        max-width: 282px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .avatar {
+        max-width: 251px;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,180 @@
+.dishes {
+    width: calc((100% - 2 * 48px) / 3);
+    max-width: 360px;
+    position: relative;
+    &:not(:last-of-type) {
+        margin-right: 48px;
+    }
+    &__img {
+        margin-bottom: 35px;
+    }
+    &__pic {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__info {
+        text-align: left;
+    }
+    &__subtitle {
+        font-size: $medium-font;
+        font-weight: 400;
+        line-height: 38px;
+        margin-bottom: 15px;
+    }
+    &__text {
+        font-size: $small-font;
+        line-height: 23px;
+        color: $secondary-color;
+        margin-bottom: 15px;
+    }
+    &__price {
+        font-size: $small-font;
+        font-weight: 700;
+        line-height: 23px;
+    }
+}
+
+.dishes--red::before {
+    @include dishes-stickers(#D33B3B);
+    content: "HOT!";
+}
+
+.dishes--green::before {
+    @include dishes-stickers(#B3E151);
+    content: "NEW!";
+}
+
+.dishes--orange::before {
+    @include dishes-stickers(#E5A434);
+    content: "HIT!";
+}
+
+@media screen and (max-width: 1087px) {
+    .dishes__text {
+        font-size: 0.65rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .dishes {
+        max-width: 252px;
+        width: calc((100% - 2 * 92px) / 3);
+        &:not(:last-of-type) {
+            margin-right: 92px;
+        }
+        &__img {
+            margin-bottom: 15px;
+        }
+        &__subtitle {
+            font-size: 1.13rem;
+        }
+        &__text {
+            font-size: 0.67rem;
+            line-height: 19px;
+            margin-bottom: 17px;
+        }
+        &__price {
+            font-size: 0.68rem;
+            line-height: 19px;
+        }
+        &::before {
+            @include dishes-stickers-size-1024;
+        }
+    }
+}
+
+@media screen and (max-width: 1016px) {
+    .dishes {
+        width: calc((100% - 2 * 50px) / 3);
+        &:not(:last-of-type) {
+            margin-right: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 952px) {
+    .dishes__subtitle {
+        font-size: 1rem;
+    }
+    .dishes__text {
+        font-size: 0.57rem;
+        line-height: 15px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .dishes__subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+    .dishes__text {
+        font-size: 0.52rem;
+        line-height: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dishes {
+        width: 100%;
+        display: flex;
+        max-width: 692px;
+        &:not(:last-of-type) {
+            margin-right: 0;
+            margin-bottom: 58px;
+        }
+        &__img {
+            max-width: 320px;
+            margin: 0 24px 0 0;
+        }
+        &__info {
+            width: 348px;
+            align-self: center;
+        }
+        &__subtitle {
+            font-size: 1.25rem;
+            line-height: 31px;
+            margin-bottom: 20px;
+        }
+        &__text {
+            font-size: 1rem;
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+        &__price {
+            font-size: 1rem;
+            line-height: 25px;
+        }
+        &::before {
+            @include dishes-stickers-size-768;
+        }
+    }
+}
+
+@media screen and (max-width: 613px) {
+    .dishes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 300px;
+        &__img {
+            max-width: 300px;
+            margin: 0 0 30px 0;
+        }
+        &__info {
+            width: 300px;
+            align-self: flex-start;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .dishes__subtitle {
+        font-size: 1rem;
+    }
+    .dishes__text,
+    .dishes__price {
+        font-size: 0.8rem;
+        line-height: 23px;
+    }
+}

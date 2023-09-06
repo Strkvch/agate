@@ -1,0 +1,15 @@
+.advantages {
+    background-color: $bg-color;
+}
+
+@media screen and (max-width: 1024px) {
+    .advantages__paragraph {
+        width: 602px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .advantages__paragraph {
+        width: 541px;
+    }
+}

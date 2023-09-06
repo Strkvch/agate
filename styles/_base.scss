@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 25px;
+}
+
+body {
+    font-family: 'Source Serif Pro', Arial, sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 20px;
+    }
+}
